@@ -1,0 +1,146 @@
+# Node.js / Next.js (前端)
+node_modules/
+.next/
+out/
+dist/
+build/
+.cache/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vercel
+.turbo
+
+# Python虚拟环境
+venv/
+env/
+ENV/
+backend/crawler_env/
+
+# Python / FastAPI (后端)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+
+# 数据库
+*.sqlite3
+*.db
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE和编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# 日志
+logs/
+*.log
+
+# 临时文件和备份
+*.bak
+*.tmp
+*~
+.~*
+
+# 环境变量文件
+.env
+.env.*
+!.env.example
+
+# Playwright 浏览器
+**/browser-installation/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+dev
+
+.vscode
+.idea
+
+# docker-compose env files
+.env
+
+*.key
+*.key.pub
+
+masks.json
+
+# mcp config
+app/mcp/mcp_config.json
