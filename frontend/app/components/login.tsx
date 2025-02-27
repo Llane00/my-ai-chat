@@ -83,10 +83,10 @@ export function Login() {
           
           <div className={styles["login-button"]}>
             <IconButton 
-              icon={isLoading ? <LoadingIcon /> : null}
+              icon={isLoading ? <LoadingIcon /> : undefined}
               text={isLoading ? "Logging in..." : "Login"}
               type="primary"
-              onClick={handleSubmit}
+              onClick={() => handleSubmit({} as React.FormEvent)}
               disabled={isLoading}
             />
           </div>
