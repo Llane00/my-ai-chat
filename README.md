@@ -38,4 +38,7 @@ docker-compose down --rmi all
 # 修改.env文件后，使用这个命令
 ```
 docker-compose up -d --force-recreate frontend
+
+# 只重新创建前端容器，忽略依赖
+docker-compose up -d --no-deps --force-recreate frontend
 ```
