@@ -23,7 +23,7 @@ docker-compose logs frontend
 docker-compose logs backend
 ```
 
-#停止服务
+# 停止服务
 ```
 # 停止所有服务但不删除容器
 docker-compose stop
@@ -33,4 +33,9 @@ docker-compose down
 
 # 停止并删除容器、网络和镜像
 docker-compose down --rmi all
+```
+
+# 修改.env文件后，使用这个命令
+```
+docker-compose up -d --force-recreate frontend
 ```
