@@ -12,7 +12,7 @@ services:
     depends_on:
       - backend
     environment:
-      - NEXT_PUBLIC_API_URL=http://backend:8000
+      - NEXT_PUBLIC_API_URL=http://localhost:8000  # 修改这一行，使用localhost而不是backend
     restart: always
 
   backend:
@@ -34,12 +34,13 @@ services:
       retries: 3
       start_period: 10s
 
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - frontend
-    restart: always 
+  # nginx服务已被您停用，所以可以注释掉或删除
+  # nginx:
+  #   image: nginx:alpine
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+  #   depends_on:
+  #     - frontend
+  #   restart: always
